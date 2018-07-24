@@ -10,10 +10,10 @@ package bai;
  * @author u000783
  */
 public class GroupHeader {
-
+   
     String recordCode = "02";
     String ultimateReceiverIdentification;
-    String originatorIdentification;
+    String originatorIdentification; 
     String groupStatus;
     String asOfDate;
     String asOfTime;

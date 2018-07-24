@@ -212,36 +212,5 @@ public class BAIRecalculate {
         BAIRecalculate bai = new BAIRecalculate();
         bai.calculate();
         bai.saveToFile();
-//        String[] contentOfFile = bai.readBAI();
-//        List<Long> accountTrailers99 = new ArrayList<>();
-//        List<Long> accountTrailers98 = new ArrayList<>();
-//        Long accountTrailerTotal = (long) 0;
-//        int type03LineCount = 0;
-//        int type02LineCount = 0;
-//        int previous98Count = 0;
-//        for (int i = 0; i < contentOfFile.length; i++) {
-//            if (contentOfFile[i].startsWith("01,")) {
-//                System.out.println(bai.get01(contentOfFile, i));
-//            } else if (contentOfFile[i].startsWith("02,")) {
-//                type02LineCount++;
-//                System.out.println(bai.get02(contentOfFile, i));
-//            } else if (contentOfFile[i].startsWith("03,")) {
-//                type03LineCount = i;
-//                accountTrailerTotal = accountTrailerTotal + bai.get03(contentOfFile, i);
-//            } else if (contentOfFile[i].startsWith("16,")) {
-//                accountTrailerTotal = accountTrailerTotal + bai.get16(contentOfFile, i);
-//            } else if (contentOfFile[i].startsWith("49,")) {
-//                System.out.println("49," + accountTrailerTotal + "," + (i - type03LineCount + 1) + "/");
-//                accountTrailers98.add(accountTrailerTotal);
-//                accountTrailers99.add(accountTrailerTotal);
-//                accountTrailerTotal = new Long(0);
-//            } else if (contentOfFile[i].startsWith("98,")) {
-//                System.out.println("98," + bai.toTotal(accountTrailers98) + "," + accountTrailers98.size() + "," + (i - previous98Count) + "/");
-//                previous98Count = i;
-//                accountTrailers98 = new ArrayList<>();
-//            } else if (contentOfFile[i].startsWith("99,")) {
-//                System.out.println("99," + bai.toTotal(accountTrailers99) + "," + type02LineCount + "," + (i + 1) + "/");
-//            }
-//        }
     }
 }

@@ -15,7 +15,7 @@ public class FileHeader {
     String senderIdentification;
     String receiverIdentification;
     String fileCreationDate;
-    String fileCreationTime;
+    String fileCreationTime;    
     String fileIdentificatioNumber;
     String physicalRecordLength;
     String blockSize;
